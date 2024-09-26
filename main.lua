@@ -43,4 +43,4 @@ snd:batch("blip", "laser", "explode", "jump", "thud", "coin", "gun", "water1", "
 
 -- go to menu screen
 display.setDefault("background", 0.2,0.2,0.2)
-composer.gotoScene("scene.game")
+composer.gotoScene("scene.menu")
