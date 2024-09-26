@@ -181,6 +181,11 @@
                          "value":"static"
                         }, 
                         {
+                         "name":"id",
+                         "type":"int",
+                         "value":5
+                        }, 
+                        {
                          "name":"isSensor",
                          "type":"bool",
                          "value":true
@@ -201,6 +206,11 @@
                          "name":"bodyType",
                          "type":"string",
                          "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":4
                         }, 
                         {
                          "name":"isSensor",
@@ -225,6 +235,11 @@
                          "value":"static"
                         }, 
                         {
+                         "name":"id",
+                         "type":"int",
+                         "value":3
+                        }, 
+                        {
                          "name":"isSensor",
                          "type":"bool",
                          "value":true
@@ -247,6 +262,11 @@
                          "value":"static"
                         }, 
                         {
+                         "name":"id",
+                         "type":"int",
+                         "value":2
+                        }, 
+                        {
                          "name":"isSensor",
                          "type":"bool",
                          "value":true
@@ -267,6 +287,11 @@
                          "name":"bodyType",
                          "type":"string",
                          "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":1
                         }, 
                         {
                          "name":"isSensor",
