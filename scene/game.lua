@@ -2,6 +2,7 @@
 local composer = require "composer"
 local ponytiled = require "com.ponywolf.ponytiled"
 local fx = require "com.ponywolf.ponyfx"
+local snd = require "com.ponywolf.ponysound"
 local snap = require "com.ponywolf.snap"
 local json = require "json"
 local app = require "app"
@@ -32,7 +33,8 @@ function scene:create( event )
   self.world:extend("hero", "door")
   self.world:centerObject("hero")
 
-  backgroundMusic = audio.loadStream( "snd/bgmusic.mp3" )
+  backgroundMusic = snd:loadMusic( "snd/bgmusic.mp3" )
+  snd:setMusicVolume(0.1)
 end
 
 local function enterFrame(event)
@@ -58,7 +60,7 @@ function scene:show( event )
   if ( phase == "will" ) then
     Runtime:addEventListener("enterFrame", enterFrame)
   elseif ( phase == "did" ) then
-    audio.play( backgroundMusic, { channel=1, loops=-1 } )
+    snd:playMusic()
     fx.fadeIn()
   end
 end
