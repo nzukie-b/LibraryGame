@@ -43,4 +43,4 @@ snd:batch("blip", "laser", "explode", "jump", "thud", "coin", "gun","select_fast
 
 -- go to menu screen
 display.setDefault("background", 0.2,0.2,0.2)
-composer.gotoScene( "scene.game", { params={ map = "house" } } )
+composer.gotoScene("scene.game")
