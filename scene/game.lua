@@ -9,6 +9,7 @@ local app = require "app"
 -- Variables local to scene
 local scene = composer.newScene()
 local world, hud, map
+local backgroundMusic
 
 function scene:create( event )
   local view = self.view -- add display objects to this group
@@ -16,7 +17,7 @@ function scene:create( event )
   physics.start()
   physics.setGravity(0,0)
   physics.setDrawMode( "hybrid" )
-  
+
   -- load world
   local worldData = json.decodeFile(system.pathForFile("map/house.json"))
   self.world = ponytiled.new(worldData, "map")
@@ -31,6 +32,7 @@ function scene:create( event )
   self.world:extend("hero", "door")
   self.world:centerObject("hero")
 
+  backgroundMusic = audio.loadStream( "snd/bgmusic.mp3" )
 end
 
 local function enterFrame(event)
@@ -56,6 +58,7 @@ function scene:show( event )
   if ( phase == "will" ) then
     Runtime:addEventListener("enterFrame", enterFrame)
   elseif ( phase == "did" ) then
+    audio.play( backgroundMusic, { channel=1, loops=-1 } )
     fx.fadeIn()
   end
 end

@@ -41,6 +41,9 @@ local snd = require "com.ponywolf.ponysound"
 snd:setVolume(0.75)
 snd:batch("blip", "laser", "explode", "jump", "thud", "coin", "gun", "water1", "chew")
 
+audio.reserveChannels( 1 )
+audio.setVolume( 0.25, { channel=1 } )
+
 -- go to menu screen
 display.setDefault("background", 0.2,0.2,0.2)
 composer.gotoScene("scene.menu")
