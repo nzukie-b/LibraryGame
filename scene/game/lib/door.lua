@@ -7,6 +7,7 @@ local composer = require "composer"
 local app = require "app"
 local json = require "json"
 local fx = require "com.ponywolf.ponyfx"
+local snd = require "com.ponywolf.ponysound"
 local Alert = require "alert"
 
 function M.new(instance)
@@ -26,6 +27,7 @@ function M.new(instance)
         if other.frameCount < 33 then return end
         other.frameCount = 0
 
+        snd:play("door-open")
         -- Create and show the custom alert
         local alert = Alert:new(
             title,
