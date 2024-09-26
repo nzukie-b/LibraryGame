@@ -39,7 +39,7 @@ end
 -- reserve audio for menu and bgsound
 local snd = require "com.ponywolf.ponysound"
 snd:setVolume(0.75)
-snd:batch("blip", "laser", "explode", "jump", "thud", "coin", "gun","select_fast","select_slow", "water1","chew","shovel")
+snd:batch("blip", "laser", "explode", "jump", "thud", "coin", "gun", "water1", "chew")
 
 -- go to menu screen
 display.setDefault("background", 0.2,0.2,0.2)

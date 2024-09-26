@@ -10,36 +10,20 @@ local app = require "app"
 local scene = composer.newScene()
 local world, hud, map
 
--- Collision handler function
-local function onCollision(event)
-  print(event.object1.name)
-  print(event.object2.name)
-
-    if (event.phase == "began") then
-        -- Check which objects collided
-        local obj1 = event.object1
-        local obj2 = event.object2
-
-        if (obj1.name == "hero" and obj2.name == "door1") then
-            print("Hero has reached the exit!")
-            -- You can trigger a scene change or any other logic here
-        end
-    end
-end
-
 function scene:create( event )
   local view = self.view -- add display objects to this group
 
   physics.start()
   physics.setGravity(0,0)
-
+  physics.setDrawMode( "hybrid" )
+  
   -- load world
   local worldData = json.decodeFile(system.pathForFile("map/house.json"))
   self.world = ponytiled.new(worldData, "map")
   self.world:centerAnchor()
 
   --standard extensions
-  self.world:findLayer("physics").isVisible = true
+  self.world:findLayer("physics").isVisible = false
   self.world:toBack()
 
   --custom extensions

@@ -14,7 +14,6 @@ function M.new(instance)
   local scene = composer.getScene("scene.game")
 
   function instance:collision(event)
-    print("hello")
     local phase = event.phase
     local other = event.other
 
@@ -25,7 +24,7 @@ function M.new(instance)
         other.frameCount = 0
 
         print("Collided with door")
-        -- composer.gotoScene("scene.refresh", { params = { map = self.name, dx = other.dx, dy = other.dy }} )
+        composer.gotoScene("scene.library")
       end
     elseif phase == "ended" then
       if other.name == "hero" then
