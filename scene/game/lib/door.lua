@@ -7,11 +7,13 @@ local composer = require "composer"
 local app = require "app"
 local json = require "json"
 local fx = require "com.ponywolf.ponyfx"
+local Alert = require "alert"
 
 function M.new(instance)
 
   if not instance then error("ERROR: Expected display object") end
   local scene = composer.getScene("scene.game")
+  local title = string.upper(bookData:getCategories()[instance.id])
 
   function instance:collision(event)
     local phase = event.phase
@@ -23,12 +25,17 @@ function M.new(instance)
         if other.frameCount < 33 then return end
         other.frameCount = 0
 
-        print("Collided with door")
-        composer.gotoScene("scene.library")
-      end
-    elseif phase == "ended" then
-      if other.name == "hero" then
-        -- hero left us
+        -- Create and show the custom alert
+        local alert = Alert:new(
+            title,
+            "Do you want to enter?",
+            {"Yes", "No"}
+        )
+        alert:show()
+        
+        -- Handle the actions (if needed, you can modify the CustomAlert to allow callbacks)
+        alert.actions[1] = function() composer.gotoScene("scene.library") end
+        alert.actions[2] = function() print("Alert: No clicked!") end
 
       end
     end
@@ -39,7 +46,7 @@ function M.new(instance)
 
   end
 
--- Add our collision listeners
+  -- Add our collision listeners
   instance:addEventListener("preCollision")
   instance:addEventListener("collision")
 
