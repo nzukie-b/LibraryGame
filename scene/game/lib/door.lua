@@ -32,12 +32,11 @@ function M.new(instance)
         local alert = Alert:new(
             title,
             "Do you want to enter?",
-            {"Yes", "No"}
+            {
+              { label = "Yes", func = function() composer.gotoScene("scene.library") end },
+              { label = "No", func = function() print("No action") end },
+            }
         )
-
-        -- Handle the actions (if needed, you can modify the CustomAlert to allow callbacks)
-        alert.actions[1] = function() composer.gotoScene("scene.library") end
-        alert.actions[2] = function() print("Alert: No clicked!") end
 
         alert:show()
 
