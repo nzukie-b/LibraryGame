@@ -28,7 +28,7 @@ function M.new(instance, options)
 
   -- load frame animation
   local heroSheetOptions = options.heroSheetOptions or { width = 16, height = 16, numFrames = 12 }
-  local heroSheet = graphics.newImageSheet("img/hero.png", heroSheetOptions)
+  local heroSheet = graphics.newImageSheet("img/bub-hero.png", heroSheetOptions)
   local sequences = require("scene.game.lib.animations")[options.animations or "hero"]
 
   -- Build hero's view

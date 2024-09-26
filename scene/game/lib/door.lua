@@ -24,7 +24,7 @@ function M.new(instance)
         other.frameCount = 0
 
         print("Collided with door")
-        composer.gotoScene("scene.library")
+        -- composer.gotoScene("scene.library")
       end
     elseif phase == "ended" then
       if other.name == "hero" then
