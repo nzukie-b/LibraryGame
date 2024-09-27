@@ -64,7 +64,7 @@ function scene:create( event )
 
   --custom extensions
   self.world.extensions = "scene.game.lib."
-  self.world:extend("hero", "door", "library-door", "book", "info")
+  self.world:extend("hero", "door", "library-door", "book", "info", "enemy")
   self.world:centerObject("hero")
 
   backgroundMusic = snd:loadMusic( "snd/bgmusic.mp3" )

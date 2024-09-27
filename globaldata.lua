@@ -4,6 +4,7 @@ GlobalData.__index = GlobalData
 -- Static properties
 GlobalData.cart = {}
 GlobalData.activeCategory = ""
+GlobalData.activeBook = 0
 
 -- Method to get the cart
 function GlobalData.getCart()
@@ -26,6 +27,16 @@ end
 -- Method to set the cart (optional)
 function GlobalData.setCart(newCart)
   GlobalData.cart = newCart
+end
+
+-- Method to get an item from the cart
+function GlobalData.getCartItem(index)
+  if index and 0 < index >= #GlobalData.cart then
+    GlobalData.activeBook = GlobalData.cart[index]
+  else
+    GlobalData.activeBook = GlobalData.cart[ math.random( #GlobalData.cart ) ]
+  end
+  return GlobalData.activeBook
 end
 
 -- Method to get the active category
