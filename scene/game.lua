@@ -7,6 +7,21 @@ local snap = require "com.ponywolf.snap"
 local json = require "json"
 local app = require "app"
 local BookData = require "BookData"
+GlobalData = require "GlobalData" -- intentionally not local
+
+local function printTable(t, indent)
+    indent = indent or 0
+    local spacing = string.rep("  ", indent)
+
+    for key, value in pairs(t) do
+        if type(value) == "table" then
+            print(spacing .. tostring(key) .. ":")
+            printTable(value, indent + 1)  -- Recursive call for nested tables
+        else
+            print(spacing .. tostring(key) .. ": " .. tostring(value))
+        end
+    end
+end
 
 -- Bookdata
 bookData = BookData:new()
@@ -33,7 +48,10 @@ function scene:create( event )
 
   -- load world
   self.map = params.map or "house"
-  print("Map is ", self.map)
+  print("MAP:", self.map)
+  print("ACTIVE-CATEGORY:", GlobalData.getCategory())
+  printTable(GlobalData.getCart())
+
   local worldData = json.decodeFile(system.pathForFile("map/" .. self.map .. ".json"))
   self.world = ponytiled.new(worldData, "map")
   self.world:centerAnchor()
@@ -45,7 +63,7 @@ function scene:create( event )
 
   --custom extensions
   self.world.extensions = "scene.game.lib."
-  self.world:extend("hero", "door", "library-door", "bookshelf")
+  self.world:extend("hero", "door", "library-door", "book")
   self.world:centerObject("hero")
 
   backgroundMusic = snd:loadMusic( "snd/bgmusic.mp3" )

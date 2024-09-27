@@ -6,7 +6,7 @@ BookData.__index = BookData
 -- Constructor
 function BookData:new()
     local instance = {
-        categories = {},         -- Store category names
+        categories = {},
         booksByCategory = {}
     }
     setmetatable(instance, BookData)
@@ -31,8 +31,6 @@ function BookData:loadFiles(fileList)
             local categoryName = fileName:match("([^%.]+)")  -- Remove the extension
             self.booksByCategory[categoryName] = self.booksByCategory[categoryName] or {}
             self.categories[categoryName] = true  -- Store category name
-
-            print(categoryName)
 
             for _, book in ipairs(decoded) do
                 self.booksByCategory[categoryName][book.id] = book

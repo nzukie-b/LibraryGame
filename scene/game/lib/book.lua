@@ -13,8 +13,6 @@ local Alert = require "alert"
 function M.new(instance)
   if not instance then error("ERROR: Expected display object") end
   local scene = composer.getScene("scene.game")
-  print(bookData:getCategories())
-  local title = "Book Title"
 
   function instance:collision(event)
     local phase = event.phase
@@ -26,18 +24,30 @@ function M.new(instance)
         if other.frameCount < 33 then return end
         other.frameCount = 0
 
+        -- Pull Book Data
+        local category = GlobalData.getCategory()
+        local bookInfo = bookData:getBookList(category)[instance.id]
+        local bookTitle = bookInfo['title']
+        local bookId = bookInfo['id']
+
         -- Create and show the custom alert
         local alert = Alert:new(
-          title,
-          "Do you want to add to your cart?",
+          bookTitle,
+          "Add to cart?",
           {
             {
               label = "Yes",
               func = function()
-                composer.gotoScene("scene.refresh", { params = { map = "house" } })
+                snd:play("coin")
+                GlobalData.addToCart(bookId)
               end
             },
-            { label = "No", func = function() print("No action") end },
+            { 
+              label = "No", 
+              func = function() 
+                print("No action") 
+              end 
+            },
           }
         )
 

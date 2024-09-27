@@ -14,8 +14,7 @@ function M.new(instance)
 
   if not instance then error("ERROR: Expected display object") end
   local scene = composer.getScene("scene.game")
-  print(bookData:getCategories())
-  local title = string.upper(bookData:getCategories()[instance.id])
+  local title = bookData:getCategories()[instance.id]
 
   function instance:collision(event)
     local phase = event.phase
@@ -28,14 +27,19 @@ function M.new(instance)
         other.frameCount = 0
 
         snd:play("door-open")
+
         -- Create and show the custom alert
         local alert = Alert:new(
-            title,
+            string.upper(title),
             "Do you want to enter?",
             {
-              { label = "Yes", func = function() 
-                composer.gotoScene("scene.refresh", { params = { map = "library" }})
-                end },
+              { 
+                label = "Yes", 
+                func = function()
+                  GlobalData.setCategory(title)
+                  composer.gotoScene("scene.refresh", { params = { map = "library1" }})
+                end 
+              },
               { label = "No", func = function() print("No action") end },
             }
         )

@@ -107,17 +107,17 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 271, 0, 178, 0, 0, 271, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 202, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 271, 0, 0, 0, 0, 271, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 354, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 221, 222, 222, 222, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 221, 222, 222, 222, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 221, 222, 222, 222, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 221, 222, 222, 222, 223, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 206, 203, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -143,9 +143,9 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 48, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -266,7 +266,7 @@
                          "value":true
                         }],
                  "rotation":0,
-                 "type":"exit",
+                 "type":"library-door",
                  "visible":true,
                  "width":32.0215550890937,
                  "x":271.127951974954,
@@ -281,11 +281,6 @@
                          "name":"bodyType",
                          "type":"string",
                          "value":"static"
-                        }, 
-                        {
-                         "name":"isSensor",
-                         "type":"bool",
-                         "value":true
                         }],
                  "rotation":0,
                  "type":"table",
@@ -303,11 +298,6 @@
                          "name":"bodyType",
                          "type":"string",
                          "value":"static"
-                        }, 
-                        {
-                         "name":"isSensor",
-                         "type":"bool",
-                         "value":true
                         }],
                  "rotation":0,
                  "type":"table",
@@ -325,11 +315,6 @@
                          "name":"bodyType",
                          "type":"string",
                          "value":"static"
-                        }, 
-                        {
-                         "name":"isSensor",
-                         "type":"bool",
-                         "value":true
                         }],
                  "rotation":0,
                  "type":"table",
@@ -339,15 +324,457 @@
                  "y":289.62321399018
                 }, 
                 {
-                 "height":0,
-                 "id":42,
+                 "height":14.8949081480664,
+                 "id":43,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":9
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
-                 "type":"",
+                 "type":"book",
                  "visible":true,
-                 "width":0,
-                 "x":571.523142273956,
-                 "y":139.019142715287
+                 "width":10.4816020301208,
+                 "x":211.838693661389,
+                 "y":255.971754840845
+                }, 
+                {
+                 "height":14.1524105754277,
+                 "id":45,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":8
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.8864696734059,
+                 "x":210.886469673406,
+                 "y":287.402799377916
+                }, 
+                {
+                 "height":13.3748055987558,
+                 "id":46,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":7
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.7309486780715,
+                 "x":227.06065318818,
+                 "y":288.335925349922
+                }, 
+                {
+                 "height":14.1524105754277,
+                 "id":47,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":6
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":11.0419906687403,
+                 "x":242.923794712286,
+                 "y":287.869362363919
+                }, 
+                {
+                 "height":14.6189735614308,
+                 "id":48,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":5
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.8864696734059,
+                 "x":227.06065318818,
+                 "y":255.365474339036
+                }, 
+                {
+                 "height":13.3748055987558,
+                 "id":49,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":4
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.7309486780715,
+                 "x":243.234836702955,
+                 "y":256.298600311042
+                }, 
+                {
+                 "height":14.7744945567651,
+                 "id":50,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":3
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":11.0419906687403,
+                 "x":227.06065318818,
+                 "y":223.639191290824
+                }, 
+                {
+                 "height":14.1524105754277,
+                 "id":51,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":2
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.5754276827371,
+                 "x":243.234836702955,
+                 "y":223.950233281493
+                }, 
+                {
+                 "height":14.3079315707621,
+                 "id":52,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":1
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.8864696734059,
+                 "x":211.04199066874,
+                 "y":224.105754276827
+                }, 
+                {
+                 "height":11.4655695690295,
+                 "id":53,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }],
+                 "rotation":0,
+                 "type":"table",
+                 "visible":true,
+                 "width":15.1075740203682,
+                 "x":208.40358804883,
+                 "y":144.735954677278
+                }, 
+                {
+                 "height":12.1400148377959,
+                 "id":54,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }],
+                 "rotation":0,
+                 "type":"table",
+                 "visible":true,
+                 "width":15.3773521278748,
+                 "x":208.268698995077,
+                 "y":176.165104201794
+                }, 
+                {
+                 "height":12.1400148377959,
+                 "id":55,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }],
+                 "rotation":0,
+                 "type":"table",
+                 "visible":true,
+                 "width":15.2424630741215,
+                 "x":288.39279692453,
+                 "y":144.466176569771
+                }, 
+                {
+                 "height":12.5446819990558,
+                 "id":56,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }],
+                 "rotation":0,
+                 "type":"table",
+                 "visible":true,
+                 "width":15.6471302353814,
+                 "x":288.257907870776,
+                 "y":176.165104201794
+                }, 
+                {
+                 "height":14.5680178053551,
+                 "id":57,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":13
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":11.3306805152762,
+                 "x":290.551021784582,
+                 "y":175.085991771768
+                }, 
+                {
+                 "height":14.5680178053551,
+                 "id":58,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":12
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.791124300263,
+                 "x":291.090577999595,
+                 "y":143.656842247252
+                }, 
+                {
+                 "height":13.6237944290821,
+                 "id":59,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":11
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.791124300263,
+                 "x":211.236258177649,
+                 "y":143.791731301005
+                }, 
+                {
+                 "height":14.2982396978485,
+                 "id":60,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }, 
+                        {
+                         "name":"id",
+                         "type":"int",
+                         "value":10
+                        }, 
+                        {
+                         "name":"isSensor",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"book",
+                 "visible":true,
+                 "width":10.791124300263,
+                 "x":211.236258177649,
+                 "y":175.355769879274
+                }, 
+                {
+                 "height":16.5913536116544,
+                 "id":61,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }],
+                 "rotation":0,
+                 "type":"decoration",
+                 "visible":true,
+                 "width":32.5082619545424,
+                 "x":304.579483374924,
+                 "y":305.253928643691
+                }, 
+                {
+                 "height":19.8286909017333,
+                 "id":62,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"bodyType",
+                         "type":"string",
+                         "value":"static"
+                        }],
+                 "rotation":0,
+                 "type":"decoration",
+                 "visible":true,
+                 "width":15.5122411816281,
+                 "x":240.102515680852,
+                 "y":156.201524246307
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -356,7 +783,7 @@
          "y":0
         }],
  "nextlayerid":17,
- "nextobjectid":43,
+ "nextobjectid":63,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

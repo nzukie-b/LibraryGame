@@ -39,7 +39,7 @@ end
 -- reserve audio for menu and bgsound
 local snd = require "com.ponywolf.ponysound"
 snd:setVolume(0.75)
-snd:batch("door-open", "step")
+snd:batch("door-open", "step", "coin")
 
 -- go to menu screen
 display.setDefault("background", 0.2,0.2,0.2)

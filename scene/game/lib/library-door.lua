@@ -32,6 +32,7 @@ function M.new(instance)
             {
               label = "Yes",
               func = function()
+                GlobalData.setCategory("")
                 composer.gotoScene("scene.refresh", { params = { map = "house" } })
               end
             },
