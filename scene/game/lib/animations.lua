@@ -8,5 +8,6 @@ return { hero = {
     { name = "walkNorth", frames = { 2, 5, 2, 8, }, time = 666, loopCount = 0 },
     { name = "walkWest", frames = { 3, 6 , }, time = 333, loopCount = 0 },
     { name = "walkEast", frames = { 7, 10, }, time = 333, loopCount = 0 },
+    { name = "attack", frames = { 11, 12, }, time = 333, loopCount = 0 },
   },
 }
