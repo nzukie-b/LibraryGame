@@ -26,7 +26,7 @@ function M.new(instance)
 
         -- Pull Book Data
         local category = GlobalData.getCategory()
-        local bookInfo = bookData:getBookList(category)[instance.id]
+        local bookInfo = BookData.getBookList(category)[instance.id]
         local bookTitle = bookInfo['title']
         local bookId = bookInfo['id']
 

@@ -14,7 +14,7 @@ function M.new(instance)
 
   if not instance then error("ERROR: Expected display object") end
   local scene = composer.getScene("scene.game")
-  local title = bookData:getCategories()[instance.id]
+  local title = BookData.getCategories()[instance.id]
 
   function instance:collision(event)
     local phase = event.phase

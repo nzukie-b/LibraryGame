@@ -6,8 +6,10 @@ local snd = require "com.ponywolf.ponysound"
 local snap = require "com.ponywolf.snap"
 local json = require "json"
 local app = require "app"
-local BookData = require "BookData"
-GlobalData = require "GlobalData" -- intentionally not local
+
+-- Global States
+GlobalData = require "GlobalData"
+BookData = require "BookData"
 
 local function printTable(t, indent)
     indent = indent or 0
@@ -22,16 +24,6 @@ local function printTable(t, indent)
         end
     end
 end
-
--- Bookdata
-bookData = BookData:new()
-bookData:loadFiles({
-  "bestsellers.json",
-  "cozy-mysteries.json",
-  "fantasy.json",
-  "horror.json",
-  "sci-fy.json",
-})
 
 -- Variables local to scene
 local scene = composer.newScene()
