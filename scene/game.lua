@@ -26,6 +26,18 @@ function printTable(t, indent)
   end
 end
 
+-- Cart Logger
+function printCart() 
+
+  local booksData = {}
+  for i, bookId in pairs(GlobalData.getCart()) do
+    local book = BookData.findBookById(bookId)
+    table.insert(booksData, {id = id, title = book.title, authors = book.authors, url = book.url, price = book.dealPrice})
+  end
+
+  printTable(booksData)
+end
+
 -- Variables local to scene
 local scene = composer.newScene()
 local world, hud, map
@@ -41,10 +53,6 @@ function scene:create( event )
 
   -- load world
   self.map = params.map or "house"
-  print("MAP:", self.map)
-  print("ACTIVE-CATEGORY:", GlobalData.getCategory())
-  printTable(GlobalData.getCart())
-
   local worldData = json.decodeFile(system.pathForFile("map/" .. self.map .. ".json"))
   self.world = ponytiled.new(worldData, "map")
   self.world:centerAnchor()
@@ -56,7 +64,7 @@ function scene:create( event )
 
   --custom extensions
   self.world.extensions = "scene.game.lib."
-  self.world:extend("hero", "door", "library-door", "book")
+  self.world:extend("hero", "door", "library-door", "book", "info")
   self.world:centerObject("hero")
 
   backgroundMusic = snd:loadMusic( "snd/bgmusic.mp3" )

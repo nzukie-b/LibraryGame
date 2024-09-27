@@ -66,6 +66,16 @@ function BookData.getBookById(category, id)
   return nil
 end
 
+-- Get the book by only the ID. This will iterate over all categories
+function BookData.findBookById(id)
+  for category, books in pairs(BookData.booksByCategory) do
+    if books[id] then
+      return books[id]  -- Return the book if found
+    end
+  end
+  return nil  -- Return nil if not found
+end
+
 -- Get the list of category names
 function BookData.getCategories()
   return BookData.categories

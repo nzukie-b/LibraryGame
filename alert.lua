@@ -31,7 +31,7 @@ function Alert:createAlert()
     width = 200,
     height = 40,
     font = "Courier",
-    fontSize = 18,
+    fontSize = 14,
     align = "center"
   })
   alertTitle:setFillColor(1, 1, 1)
@@ -45,7 +45,7 @@ function Alert:createAlert()
     width = 200,
     height = 40,
     font = "Courier",
-    fontSize = 14,
+    fontSize = 12,
     align = "center"
   })
   alertMessage:setFillColor(1, 1, 1)
