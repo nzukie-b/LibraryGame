@@ -31,16 +31,16 @@ function M.new(instance)
             "Librarian",
             "Do you want to print your cart?",
             {
-              { 
-                label = "Yes", 
+              {
+                label = "Yes",
                 func = function()
                   printCart()
                 end
               },
-              { 
-                label = "No", 
-                func = function() 
-                  print("No action") 
+              {
+                label = "No",
+                func = function()
+                  print("No action")
                 end
               },
             }
@@ -52,15 +52,16 @@ function M.new(instance)
             "Librarian",
             "Your cart is empty, add books and then come back!",
             {
-              { 
-                label = "OK", 
+              {
+                label = "OK",
                 func = function()
-                  print("No action") 
+                  print("No action")
                 end
               },
             }
           )
 
+          snd:play("mhmm")
           alert:show()
         end
 

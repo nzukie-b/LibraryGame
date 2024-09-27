@@ -42,15 +42,15 @@ function M.new(instance)
                 GlobalData.addToCart(bookId)
               end
             },
-            { 
-              label = "No", 
-              func = function() 
-                print("No action") 
-              end 
+            {
+              label = "No",
+              func = function()
+                print("No action")
+              end
             },
           }
         )
-
+        snd:play("page-turn")
         alert:show()
       end
     end

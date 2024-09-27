@@ -211,7 +211,7 @@ function M.new(instance, options)
         newSequence = newSequence:gsub("walk", "idle")
       else
         -- step sound
-        if instance.frameCount % 33 == 1 then snd:play("step") end
+        if instance.frameCount % 40 == 1 then snd:play("step") end
       end
 
       if newSequence and instance.sequence ~= newSequence then
