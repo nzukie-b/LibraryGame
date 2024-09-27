@@ -25,9 +25,11 @@ function Alert:createAlert()
 
   -- Center-aligned alert title
   local alertTitle = display.newText({
-    text = "\"" .. self.title .. "\"",
+    text = self.title,
     x = display.contentCenterX,
-    y = display.contentCenterY - 40,
+    y = display.contentCenterY - 50,
+    width = 200,
+    height = 40,
     font = "Courier",
     fontSize = 18,
     align = "center"
@@ -39,7 +41,9 @@ function Alert:createAlert()
   local alertMessage = display.newText({
     text = self.message,
     x = display.contentCenterX,
-    y = display.contentCenterY - 20,
+    y = display.contentCenterY,
+    width = 200,
+    height = 40,
     font = "Courier",
     fontSize = 14,
     align = "center"

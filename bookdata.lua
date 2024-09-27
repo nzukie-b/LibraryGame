@@ -76,7 +76,7 @@ BookData.loadFiles({
   "cozy-mysteries.json",
   "fantasy.json",
   "horror.json",
-  "sci-fy.json",
+  "sci-fi.json",
 })
 
 
