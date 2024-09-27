@@ -25,6 +25,8 @@ function M.new(instance)
         -- hero touched us
         if other.frameCount < 33 then return end
         other.frameCount = 0
+        snd:play("chicken")
+
 
         if table.getn(GlobalData.getCart()) ~= 0 then
           local book = BookData.findBookById(GlobalData.getCartItem())
@@ -36,7 +38,7 @@ function M.new(instance)
                 label = "I am " .. book.authors,
                 func = function()
                   print("Congratulations you're a real Book Bub!")
-                  printCart()
+                  viewCart()
                 end
               },
               { 

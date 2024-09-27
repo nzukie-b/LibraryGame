@@ -33,15 +33,7 @@ function M.new(instance)
             {
               {
                 label = "Yes",
-                func = function()
-                  local booksData = {}
-                  for i, bookId in pairs(GlobalData.getCart()) do
-                    local book = BookData.findBookById(bookId)
-                    table.insert(booksData, {id = id, title = book.title, authors = book.authors, url = book.url, price = book.dealPrice})
-                  end
-
-                  CartView:new(booksData)
-                end
+                func = viewCart
               },
               {
                 label = "No",
