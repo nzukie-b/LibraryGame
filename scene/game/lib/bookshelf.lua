@@ -11,11 +11,10 @@ local snd = require "com.ponywolf.ponysound"
 local Alert = require "alert"
 
 function M.new(instance)
-
   if not instance then error("ERROR: Expected display object") end
   local scene = composer.getScene("scene.game")
   print(bookData:getCategories())
-  local title = string.upper(bookData:getCategories()[instance.id])
+  local title = "Book Title"
 
   function instance:collision(event)
     local phase = event.phase
@@ -27,28 +26,28 @@ function M.new(instance)
         if other.frameCount < 33 then return end
         other.frameCount = 0
 
-        snd:play("door-open")
         -- Create and show the custom alert
         local alert = Alert:new(
-            title,
-            "Do you want to enter?",
+          title,
+          "Do you want to add to your cart?",
+          {
             {
-              { label = "Yes", func = function() 
-                composer.gotoScene("scene.refresh", { params = { map = "library" }})
-                end },
-              { label = "No", func = function() print("No action") end },
-            }
+              label = "Yes",
+              func = function()
+                composer.gotoScene("scene.refresh", { params = { map = "house" } })
+              end
+            },
+            { label = "No", func = function() print("No action") end },
+          }
         )
 
         alert:show()
-
       end
     end
   end
 
   function instance:preCollision(event)
     local other = event.other
-
   end
 
   -- Add our collision listeners

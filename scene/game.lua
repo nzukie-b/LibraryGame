@@ -25,23 +25,27 @@ local backgroundMusic
 
 function scene:create( event )
   local view = self.view -- add display objects to this group
+  local params = event.params or {}
 
   physics.start()
   physics.setGravity(0,0)
   physics.setDrawMode( "hybrid" )
 
   -- load world
-  local worldData = json.decodeFile(system.pathForFile("map/house.json"))
+  self.map = params.map or "house"
+  print("Map is ", self.map)
+  local worldData = json.decodeFile(system.pathForFile("map/" .. self.map .. ".json"))
   self.world = ponytiled.new(worldData, "map")
   self.world:centerAnchor()
 
   --standard extensions
+  view:insert(self.world)
   self.world:findLayer("physics").isVisible = false
   self.world:toBack()
 
   --custom extensions
   self.world.extensions = "scene.game.lib."
-  self.world:extend("hero", "door")
+  self.world:extend("hero", "door", "library-door", "bookshelf")
   self.world:centerObject("hero")
 
   backgroundMusic = snd:loadMusic( "snd/bgmusic.mp3" )
