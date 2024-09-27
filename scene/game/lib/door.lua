@@ -37,10 +37,15 @@ function M.new(instance)
                 label = "Yes", 
                 func = function()
                   GlobalData.setCategory(title)
-                  composer.gotoScene("scene.refresh", { params = { map = "library1" }})
+                  composer.gotoScene("scene.refresh", { params = { map = "library" .. math.random(1, 2) }})
                 end 
               },
-              { label = "No", func = function() print("No action") end },
+              { 
+                label = "No", 
+                func = function() 
+                  print("No action") 
+                end
+              },
             }
         )
 

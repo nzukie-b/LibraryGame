@@ -44,3 +44,6 @@ snd:batch("door-open", "step", "coin")
 -- go to menu screen
 display.setDefault("background", 0.2,0.2,0.2)
 composer.gotoScene("scene.menu")
+
+-- seed random
+math.randomseed(os.time())
