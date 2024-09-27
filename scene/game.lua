@@ -11,18 +11,19 @@ local app = require "app"
 GlobalData = require "GlobalData"
 BookData = require "BookData"
 
-local function printTable(t, indent)
-    indent = indent or 0
-    local spacing = string.rep("  ", indent)
+-- Debug Helper
+function printTable(t, indent)
+  indent = indent or 0
+  local spacing = string.rep("  ", indent)
 
-    for key, value in pairs(t) do
-        if type(value) == "table" then
-            print(spacing .. tostring(key) .. ":")
-            printTable(value, indent + 1)  -- Recursive call for nested tables
-        else
-            print(spacing .. tostring(key) .. ": " .. tostring(value))
-        end
+  for key, value in pairs(t) do
+    if type(value) == "table" then
+      print(spacing .. tostring(key) .. ":")
+      printTable(value, indent + 1)  -- Recursive call for nested tables
+    else
+      print(spacing .. tostring(key) .. ": " .. tostring(value))
     end
+  end
 end
 
 -- Variables local to scene
