@@ -9,7 +9,7 @@ local json = require "json"
 local fx = require "com.ponywolf.ponyfx"
 local snd = require "com.ponywolf.ponysound"
 local Alert = require "alert"
-
+local CartView = require("CartView")
 
 function M.new(instance)
 
@@ -29,12 +29,18 @@ function M.new(instance)
         if table.getn(GlobalData.getCart()) ~= 0 then
           local alert = Alert:new(
             "Librarian",
-            "Do you want to print your cart?",
+            "Do you want to view your cart?",
             {
               {
                 label = "Yes",
                 func = function()
-                  printCart()
+                  local booksData = {}
+                  for i, bookId in pairs(GlobalData.getCart()) do
+                    local book = BookData.findBookById(bookId)
+                    table.insert(booksData, {id = id, title = book.title, authors = book.authors, url = book.url, price = book.dealPrice})
+                  end
+
+                  CartView:new(booksData)
                 end
               },
               {

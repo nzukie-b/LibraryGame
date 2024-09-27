@@ -26,18 +26,6 @@ function printTable(t, indent)
   end
 end
 
--- Cart Logger
-function printCart() 
-
-  local booksData = {}
-  for i, bookId in pairs(GlobalData.getCart()) do
-    local book = BookData.findBookById(bookId)
-    table.insert(booksData, {id = id, title = book.title, authors = book.authors, url = book.url, price = book.dealPrice})
-  end
-
-  printTable(booksData)
-end
-
 -- Variables local to scene
 local scene = composer.newScene()
 local world, hud, map
