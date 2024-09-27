@@ -214,20 +214,21 @@ function M.new(instance, options)
         if instance.frameCount % 40 == 1 then snd:play("step") end
       end
 
-      if newSequence and instance.sequence ~= newSequence then
-        instance:setSequence(newSequence)
-        instance.sprite:play()
-      end
-
       -- Continue attack
       if instance.attack ~= nil then
         print("Attack frame!")
         instance.attack = instance.attack + 1
+        newSequence = "attack"
       end
 
       if instance.attack ~= nil and instance.attack >= 20 then
         -- End attack
         instance.attack = nil
+      end
+
+      if newSequence and instance.sequence ~= newSequence then
+        instance:setSequence(newSequence)
+        instance.sprite:play()
       end
     end
   end
