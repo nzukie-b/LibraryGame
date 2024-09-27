@@ -21,6 +21,7 @@ local key = function(event)
   if event.keyName == "s" then event.keyName = "down" end
   if event.keyName == "a" then event.keyName = "left" end
   if event.keyName == "d" then event.keyName = "right" end
+  if event.keyName == "space" then event.keyName = "attack" end
   M.keyStates[event.keyName] = (event.phase=="down")
 end
 Runtime:addEventListener("key", key)

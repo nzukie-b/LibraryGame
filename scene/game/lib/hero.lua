@@ -42,6 +42,8 @@ function M.new(instance, options)
   parent:insert(instance)
   instance.x, instance.y = x, y
 
+  instance.attack = nil
+
   -- vars
   instance.name = "hero"
   instance.phase = "idle"
@@ -164,6 +166,10 @@ function M.new(instance, options)
     if app.keyStates["left"] then kdx = kdx - 1 else kdx = kdx + 1 end
     if app.keyStates["right"] then kdx = kdx + 1 else kdx = kdx - 1 end
 
+    if app.keyStates["attack"] and instance.attack == nil then
+      instance.attack = 1
+    end
+
     dx = dx + kdx
     dy = dy + kdy
 
@@ -211,6 +217,17 @@ function M.new(instance, options)
       if newSequence and instance.sequence ~= newSequence then
         instance:setSequence(newSequence)
         instance.sprite:play()
+      end
+
+      -- Continue attack
+      if instance.attack ~= nil then
+        print("Attack frame!")
+        instance.attack = instance.attack + 1
+      end
+
+      if instance.attack ~= nil and instance.attack >= 20 then
+        -- End attack
+        instance.attack = nil
       end
     end
   end
